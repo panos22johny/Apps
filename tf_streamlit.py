@@ -95,7 +95,8 @@ def main():
             
             y_pred = model.predict(X_sc)
             st.header('Predicted Car Price')
-            st.write(y_pred)
+            st.write("€{:,.2f}".format(y_pred.item(0)))
+            
         
 
         

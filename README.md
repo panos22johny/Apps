@@ -1,2 +1,2 @@
 # Apps
-This repo contains apps that i have developed
+This repo contains my developed apps 

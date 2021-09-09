@@ -51,7 +51,7 @@ st.sidebar.header('Input Features')
 def main():    
         Kilometers_Driven = st.sidebar.slider(
             label='Kilometers_Driven',
-            min_value=float(0),
+            min_value=float(500.0),
             max_value=float(800000.0),
             value=float(),
             step=500.0)

@@ -41,7 +41,7 @@ def create_df(Kilometers_Driven,Mileage,Engine,Power,Age):
     values_to_add = {'Kilometers_Driven':Kilometers_Driven, 'Mileage':Mileage,'Engine':Engine,'Power':Power,'Age':Age}
     row_to_add = pd.Series(values_to_add, name='0')
     X_scale = X_scale.append(row_to_add)
-    st.write(X_scale)
+    
     
     return X_scale
 
@@ -88,11 +88,11 @@ def main():
             model = tf.keras.models.load_model('my_model_1.hdf5')
             s_scaler = joblib.load("scaler.save")
             X_sc = create_df(Kilometers_Driven,Mileage,Engine,Power,Age)
-            st.write(X_sc)
+            
             s = np.load('std.npy')
             m = np.load('mean.npy')
             X_sc = (X_sc - m) /s
-            st.write(X_sc)
+            
             y_pred = model.predict(X_sc)
             st.header('Predicted Car Price')
             st.write(y_pred)

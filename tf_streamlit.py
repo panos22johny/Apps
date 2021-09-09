@@ -51,33 +51,33 @@ st.sidebar.header('Input Features')
 def main():    
         Kilometers_Driven = st.sidebar.slider(
             label='Kilometers_Driven',
-            min_value=float(500.0),
-            max_value=float(800000.0),
-            value=float(),
+            min_value=float(500),
+            max_value=float(850000),
+            value=float(10000),
             step=500.0)
         Mileage = st.sidebar.slider(
             label='Mileage',
-            min_value=float(0.0),
+            min_value=float(3),
             max_value=float(35),
-            value=float(),
+            value=float(3),
             step=0.1)
         Engine = st.sidebar.slider(
-            label='Engine',
-            min_value=float(600),
+            label='Engine size',
+            min_value=float(500),
             max_value=float(5500),
-            value=float(),
+            value=float(500),
             step=10.0)
         Power = st.sidebar.slider(
             label='Engine power',
-            min_value=float(0.0),
+            min_value=float(50),
             max_value=float(560.0),
-            value=float(),
+            value=float(50),
             step=1.0)
         Age = st.sidebar.slider(
             label='Age',
             min_value=float(1),
             max_value=float(25),
-            value=float(),
+            value=float(1),
             step=1.0)
         if st.button("Ready"):
             st.header ('Specified parameters')

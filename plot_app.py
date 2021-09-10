@@ -8,8 +8,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 import tensorflow
-import cv2
-import altair as alt
 from tensorflow import keras
 from keras import models
 

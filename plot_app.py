@@ -16,7 +16,7 @@ st.write("""
 st.write(""" ## Data analysis & CNN model construction ## """)
 #@st.cache(allow_output_mutation=True)
 def load_data():
-    Data = pd.read_csv('Spotawheel_case_study (1).csv')
+    Data = pd.read_csv('car_data.csv')
     return Data
 
 Data = load_data()

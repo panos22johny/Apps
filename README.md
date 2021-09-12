@@ -1,6 +1,6 @@
 # Apps
 This repo contains my developed apps 
-View them on Streamlit share:
+View them on Streamlit at the following links:
 
 1.Data analysis & CNN model construction: https://share.streamlit.io/panos22johny/apps/main/plot_app.py 
 
